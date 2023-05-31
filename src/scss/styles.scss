@@ -1,1 +1,61 @@
 @import "bootstrap/scss/bootstrap";
+@import "themeContext.scss";
+
+// dark/light mode switch
+.switch{
+    display: flex;
+    height: 25px;
+    flex-flow: column wrap;
+    align-content: flex-end;
+}
+
+#light .switch label{
+    color: black;
+    margin-right: 1em;
+}
+
+#dark .switch label{
+    color: white;
+    margin-right: 1em;
+}
+
+
+// main banner
+.main-banner-text{
+    display: block;
+    align-items: center;
+    margin-bottom: 1em;
+    background-size: contain;
+}
+
+.main-banner-text div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-banner-text h1{
+    font-size: max(35px, 3vw);
+
+}
+
+.main-banner-text subtitle{
+    font-size: max(15px, 1.5vw);
+    font-style: italic;
+}
+
+.main-banner-text img{
+    max-width: max(60px, 5vw);
+    height: auto;
+}
+
+#light .main-banner-text{
+    h1, subtitle {
+        color: black;
+    }
+}
+
+#dark .main-banner-text{
+    h1, subtitle{
+        color: white;
+    }
+}

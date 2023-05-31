@@ -2,9 +2,10 @@
   "name": "gdptcp-website",
   "version": "1.0.0",
   "description": "Test website for GDPT CP",
-  "main": "index.js",
+  "source": "/src/index.html",
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-switch": "^7.0.0"
   }
 }
